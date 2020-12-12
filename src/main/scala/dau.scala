@@ -14,7 +14,7 @@ object COUNT {
     val COU = df.count()
     val list1: List[Long] = List(COU)
     import spark.implicits._
-    list1.toDF.write.csv("dddd")
+    list1.toDF.write.csv("s3://some/path")
 
   }
 }
