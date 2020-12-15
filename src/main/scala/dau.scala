@@ -4,7 +4,7 @@ import org.apache.spark.sql.functions.udf
 import org.apache.log4j.{Level, Logger}
 
 object COUNT {
-  def main(args: Array[String]): Unit = { //开入口
+  def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
 
     val spark = SparkSession.builder().enableHiveSupport().getOrCreate()
